@@ -12,35 +12,36 @@
 
 void getCellVolData(){
   for(int i=0; i<20; i++){
-    BV[i] = B[i].toInt() * 0.1;
+    // BV[i] = B[i].toInt() * 0.1;
+    BV[i] = B[i].toInt();
   }
 }
 
 void getBatteryTempData(){
   for(int i=0; i<5; i++){
     // BT[i] = T[i].toInt() * 0.01;
-    BT[i] = T[i].toFloat();
+    BT[i] = T[i].toInt();
   }
 }
 
 void getVolPackData(){
   for(int i=0; i<1; i++){
     // VP[i] = V[i].toInt() * 10;
-    VP[i] = V[i].toFloat();
+    VP[i] = V[i].toInt();
   }
 }
 
 void getSoC(){
   for(int i=0; i<1; i++){
     // BS[i] = S[i].toInt();
-    BS[i] = S[i].toFloat();
+    BS[i] = S[i].toInt();
   }
 }
 
 void getCurrent(){
   for(int i=0; i<1; i++){
     // BC[i] = C[i].toInt() * 10;
-    BC[i] = C[i].toFloat();
+    BC[i] = C[i].toInt();
   }
 }
 

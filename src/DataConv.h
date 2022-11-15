@@ -12,23 +12,27 @@
  * Then N = (E - C)/x -> value transmittion
  */
 
+// System Voltage data Convert for send in CANBUS
 uint16_t sys_voltage_conv(uint16_t _value){
   double factor = 0.1;
   int offset = 0;
   return (_value - offset)/factor;
 }
 
+// System Current data Convert for send in CANBUS
 uint16_t sys_current_conv(uint16_t _value){
   double factor = 0.1;
   int offset = -500;
   return (_value - offset)/factor;
 }
 
+// System Soc data Convert for send in CANBUS
 uint8_t sys_soc_conv(uint8_t _value){
   double factor = 0.4;
   int offset = 0;
   return (_value - offset)/factor;
 }
+
 
 uint16_t chg_current_limit_conv(uint16_t _value){
   double factor = 0.1;
