@@ -20,7 +20,7 @@ void getCellVolData(){
 void getBatteryTempData(){
   for(int i=0; i<5; i++){
     // BT[i] = T[i].toInt() * 0.01;
-    BT[i] = T[i].toInt();
+    BT[i] = T[i].toInt() * 0.01;
   }
 }
 
